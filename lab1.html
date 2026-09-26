@@ -1,81 +1,127 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Виноградов Дмитрий.Любитель кино и сериалов</title>
+    
     <link rel="stylesheet" href="style.css">
 
+<style>
+    aside {
+        width: 320px;           
+        background-color: #161616;
+        padding: 24px;          
+        border-radius: 8px;     
+        border: 1px solid #333; 
+        align-self: flex-start;
+    }
+
+    aside p {
+        margin-bottom: 16px;   
+        line-height: 1.5;       
+        color: #dcdcdc;        
+    }
+
+    aside h2 {
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+</style>
 </head>
 
 <body>
 
 <header>
-
     <h1>Виноградов Дмитрий</h1>
     <p>Любитель кино и сериалов</p>
 
+    <nav class="nav-links">
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#photo">Фотография</a>
+        <a href="#feedback">Обратная связь</a>
+    </nav>
 </header>
 
-<main>
+<div class="content-wrapper">
+    <main>
 
-    <section>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Оценка визуального стиля фильмов и сериалов.</li>
+                <li>Оценка качества спецэффектов.</li>
+                <li>Анализ впечатлений от отдельных сцен.</li>
+                <li>Оценка атмосферы и постановки сцен.</li>
+                <li>Сравнение визуального оформления разных произведений.</li>
+                <li>Общая оценка фильма и впечатления после его просмотра.</li>
+            </ul>
+        </section>
 
-        <h2>Навыки</h2>
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Фильм «Интерстеллар»</h3>
+                        <p>Альтернативный вариант развития одной из сцен.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>
 
-        <ul>
-            <li>Оценка визуального стиля фильмов и сериалов.</li>
-            <li>Оценка качества спецэффектов.</li>
-            <li>Анализ впечатлений от отдельных сцен.</li>
-            <li>Оценка атмосферы и постановки сцен.</li>
-            <li>Сравнение визуального оформления разных произведений.</li>
-            <li>Общая оценка фильма и впечатления после его просмотра.</li>
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Сериал «Декстер»</h3>
+                        <p>Идея фанатского трейлера.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>
 
-        </ul>
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Сериал «Игра престолов»</h3>
+                        <p>Альтернативное развитие сюжетной линии.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>
 
-    </section>
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Вселенная «Властелин колец» и «Хоббит»</h3>
+                        <p>Идея фанатского трейлера.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>
 
-    <section>
+            </div>
+        </section>
 
-    <h2>Проекты</h2>
+        <div id="photo" class="photo-block">
+            <h2>Моя фотография(это самая адекватная, что я нашел, простите :(</h2>
+            <img
+                src="img/chudak.jpg"
+                alt="Фотография Виноградова Дмитрия(ну нет у меня нормальной фотки("
+                width="300"
+                height="400">
+        </div>
 
-    <ol>
-        <li>Фильм «Интерстеллар» - альтернативный вариант развития одной из сцен.</li>
-        <li>Сериал «Декстер» - идея фанатского трейлера.</li>
-        <li>Сериал «Игра престолов» - альтернативное развитие сюжетной линии.</li>
-        <li>Вселенная «Властелин колец» и «Хоббит» - идея фанатского трейлера.</li>
-    </ol>
+    </main>
 
-</section>
-
-<aside> <!--style="float: right; width: 25%; background: #ffffff; padding: 10px;"-->
-
-    <h2>Мои любимые режиссёры</h2>
-
-    <p>Кристофер Нолан - картина Одиссея и Интерстеллар</p>
-    <p>Майкл Бэй - серия фильмов Трансформеры, эффекты на величайшем уровне</p>
-
-    <p>
-        Любимые жанры: фантастика, триллер, комедия, боевик и фэнтези</p>
-
-</aside>
-
-<div>
-    <h2>Моя фотография(это самая адекватная, что я нашел, простите :(</h2>
-
-    <img
-        src="img/chudak.jpg"
-        alt="Фотография Виноградова Дмитрия(ну нет у меня нормальной фотки("
-        width="300"
-        height="400">
+    <aside>
+        <h2>Мои любимые режиссёры</h2>
+        <p>Кристофер Нолан - картина Одиссея и Интерстеллар</p>
+        <p>Майкл Бэй - серия фильмов Трансформеры, эффекты на величайшем уровне</p>
+        <p>Любимые жанры: фантастика, триллер, комедия, боевик и фэнтези</p>
+    </aside>
 </div>
 
-<section>
+<section id="feedback" class="feedback-bottom">
     <h2>Обратная связь</h2>
 
-    <form>
+    <form class="feedback-form">
         <label for="name">Имя:</label>
         <input
             type="text"
@@ -100,12 +146,9 @@
     </form>
 </section>
 
-</main>
-
 <footer>
     <p>© 2026 Виноградов Дмитрий</p>
 </footer>
-
 
 </body>
 </html>
