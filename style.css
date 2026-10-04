@@ -66,6 +66,11 @@ header p {
   color: #ffffff;
 }
 
+.nav-links a:focus {
+  outline: none;
+  color: var(--accent-gold);
+  box-shadow: 0 0 0 2px var(--accent-gold);
+}
 
 .content-wrapper {
   display: flex;
@@ -138,7 +143,9 @@ h2 {
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(212, 175, 55, 0.22);
+  backdrop-filter: blur(2px);         
+  border: 1px solid rgba(212, 175, 55, 0.4);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -182,6 +189,15 @@ h2 {
   padding: 10px;
   border-radius: 6px;
   font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
 }
 
 .feedback-form textarea {
