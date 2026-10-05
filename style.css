@@ -8,6 +8,11 @@
   --border-color: #333333;
   --font-base: Arial, sans-serif;
 }
+/* ЛЮТАЯ ИМБА */
+html {
+  scroll-behavior: smooth;
+}
+
 
 * {
   box-sizing: border-box;
