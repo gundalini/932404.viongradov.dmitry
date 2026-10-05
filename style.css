@@ -287,9 +287,9 @@ h2 {
 
 .director-figure img {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: top; 
+  object-position: center top; 
 }
 
 .director-figure figcaption {
