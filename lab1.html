@@ -8,27 +8,7 @@
     
     <link rel="stylesheet" href="style.css">
 
-<style>
-    aside {
-        width: 320px;           
-        background-color: #161616;
-        padding: 24px;          
-        border-radius: 8px;     
-        border: 1px solid #333; 
-        align-self: flex-start;
-    }
 
-    aside p {
-        margin-bottom: 16px;   
-        line-height: 1.5;       
-        color: #dcdcdc;        
-    }
-
-    aside h2 {
-        margin-top: 0;
-        margin-bottom: 18px;
-    }
-</style>
 </head>
 
 <body>
@@ -41,6 +21,8 @@
         <a href="#skills">Навыки</a>
         <a href="#projects">Проекты</a>
         <a href="#photo">Фотография</a>
+        <a href="#top-movies">Топ фильмов</a>
+        <a href="#directors">Режиссёры</a>
         <a href="#feedback">Обратная связь</a>
     </nav>
 </header>
@@ -99,6 +81,94 @@
             </div>
         </section>
 
+       
+<section id="top-movies">
+    <h2>Топ-фильмов и серилов для просмотра</h2>
+    <div class="movies-flex">
+        
+        
+        <article class="movie-flex-card">
+            <img src="img/dexter.jpg" alt="Декстер" class="movie-poster">
+            <div class="movie-info">
+                <h3>Декстер</h3>
+                <p><strong>Жанр:</strong>  Преступление, Драма, Криминальный фильм, Детектив, Триллер</p>
+                <p><strong>Год:</strong> 2006-2025</p>
+            </div>
+        </article>
+
+       
+        <article class="movie-flex-card">
+            <img src="img/hobbit.jpg" alt="Трилогия Хоббит" class="movie-poster">
+            <div class="movie-info">
+                <h3>Трилогия Хоббит</h3>
+                <p><strong>Жанр:</strong> Фэнтези, Приключения, Боевик</p>
+                <p><strong>Год:</strong> 2012-2014</p>
+            </div>
+        </article>
+
+       
+        <article class="movie-flex-card">
+            <img src="img/brbad.jpg" alt="Breaking Bad" class="movie-poster">
+            <div class="movie-info">
+                <h3>Во все Тяжкие</h3>
+                <p><strong>Жанр:</strong> Драма, Криминал</p>
+                <p><strong>Год:</strong> 2008-2013</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+
+
+
+<section id="directors">
+    <h2>Любимые режиссёры</h2>
+    <div class="directors-grid">
+        
+        
+        <figure class="director-figure">
+            <img src="img/nolan.jpg" alt="Кристофер Нолан">
+            <figcaption>
+                <h3>Кристофер Нолан</h3>
+                <p>Знаковый фильм: Интерстеллар</p>
+            </figcaption>
+        </figure>
+
+        <figure class="director-figure">
+            <img src="img/bay.jpg" alt="Майкл Бэй">
+            <figcaption>
+                <h3>Майкл Бэй</h3>
+                <p>Знаковый фильм: Серия фильмов Трансформеры</p>
+            </figcaption>
+        </figure>
+        
+        <figure class="director-figure">
+            <img src="img/gilligan.jpg" alt="Винс Гиллиган">
+            <figcaption>
+                <h3>Винс Гиллиган</h3>
+                <p>Знаковая работа: Во все Тяжкие</p>
+            </figcaption>
+        </figure>
+
+        <figure class="director-figure">
+            <img src="img/jackson.jpg" alt="Питер Джексон">
+            <figcaption>
+                <h3>Питер Джексон</h3>
+                <p>Трилогия: Властелин колец и Хоббит</p>
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+
+
+
+
+
+
         <div id="photo" class="photo-block">
             <h2>Моя фотография(это самая адекватная, что я нашел, простите :(</h2>
             <img
@@ -110,12 +180,7 @@
 
     </main>
 
-    <aside>
-        <h2>Мои любимые режиссёры</h2>
-        <p>Кристофер Нолан - картина Одиссея и Интерстеллар</p>
-        <p>Майкл Бэй - серия фильмов Трансформеры, эффекты на величайшем уровне</p>
-        <p>Любимые жанры: фантастика, триллер, комедия, боевик и фэнтези</p>
-    </aside>
+    
 </div>
 
 <section id="feedback" class="feedback-bottom">
@@ -145,6 +210,8 @@
         <button type="submit">Отправить</button>
     </form>
 </section>
+
+
 
 <footer>
     <p>© 2026 Виноградов Дмитрий</p>
