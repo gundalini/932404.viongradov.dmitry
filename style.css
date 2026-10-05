@@ -255,8 +255,9 @@ h2 {
 
 .movie-poster {
   width: 100%;
-  height: 350px;
+  aspect-ratio: 2 / 3;
   object-fit: cover; 
+  object-position: center;
 }
 
 .movie-info {
@@ -347,7 +348,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  
   .photo-block img {
     max-width: 100%;
     height: auto;
