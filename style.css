@@ -1,6 +1,8 @@
-:root {
+:root, body.theme-dark {
   --bg-main: #0b0b0b;
   --bg-card: #151515;
+  --bg-header: #111111;
+  --bg-subcard: #1e1e1e;
   --accent-gold: #d4af37;
   --accent-oscar: #e50914;
   --text-main: #f5f5f5;
@@ -30,7 +32,7 @@ body {
 header {
   padding: 40px 20px 25px;
   text-align: center;
-  background-color: #111111;
+  background-color: var(--bg-header);                   /* fix с #111111, из-за фиксированных цветов */
   border-bottom: 2px solid var(--accent-gold);
 }
 
@@ -117,7 +119,8 @@ h2 {
 
 .project-card {
   position: relative;
-  background-color: #1e1e1e;
+  background-color: var(--bg-header);                   /* fix с #1e1e1e , из-за фиксированных цветов */
+  background-color: var(--bg-subcard);                                          
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 20px;
@@ -192,8 +195,8 @@ h2 {
 
 .feedback-form input,
 .feedback-form textarea {
-  background-color: #1a1a1a;
-  border: 1px solid var(--border-color);
+  background-color: var(--bg-subcard);              /* fix с #1a1a1a, из-за фиксированных цветов */
+  border: 1px solid var(--border-color);                                
   color: var(--text-main);
   padding: 10px;
   border-radius: 6px;
@@ -249,7 +252,7 @@ h2 {
 }
 
 .movie-flex-card {
-  background-color: #1e1e1e;
+  background-color: var(--bg-subcard);      /* fix c #1e1e1e , из-за фиксированных цветов */
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
@@ -284,7 +287,7 @@ h2 {
 
 .director-figure {
   margin: 0;
-  background-color: #1e1e1e;
+  background-color: var(--bg-subcard);      /* fix c #1e1e1e , из-за фиксированных цветов */
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
@@ -357,4 +360,61 @@ footer {
     max-width: 100%;
     height: auto;
   }
+}
+
+
+body.theme-light {
+  --bg-main: #f4f4f9;
+  --bg-card: #ffffff;
+  --bg-header: #e0e0e0;
+  --bg-subcard: #f0f0f0;
+  --accent-gold: #b8860b;
+  --accent-oscar: #e50914;
+  --text-main: #111111;
+  --text-muted: #444444;
+  --border-color: #cccccc;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.movies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.movies-table th,
+.movies-table td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.controls-panel {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.controls-panel button,
+.status-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.controls-panel button:hover,
+.status-btn:hover,
+.delete-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
 }
