@@ -78,6 +78,25 @@
                     <div class="card-overlay"></div>
                 </article>
 
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Фильм "Реквием по мечте"</h3>
+                        <p>Альтернативное развитие сюжетной линии.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>
+
+                
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Фильм "Дневник баскетболиста"</h3>
+                        <p>Альтернативное развитие сюжетной линии.</p>
+                    </div>
+                    <div class="card-overlay"></div>
+                </article>    
+
+
+
             </div>
         </section>
 
@@ -144,6 +163,9 @@
             </figcaption>
         </figure>
         
+
+
+
         <figure class="director-figure">
             <img src="img/gilligan.jpg" alt="Винс Гиллиган">
             <figcaption>
@@ -159,24 +181,54 @@
                 <p>Трилогия: Властелин колец и Хоббит</p>
             </figcaption>
         </figure>
+        
 
     </div>
 </section>
 
 
-
-
-
-
-
         <div id="photo" class="photo-block">
-            <h2>Моя фотография(это самая адекватная, что я нашел, простите :(</h2>
+            <h2>Моя фотография</h2>
             <img
                 src="img/chudak.jpg"
                 alt="Фотография Виноградова Дмитрия(ну нет у меня нормальной фотки("
                 width="300"
                 height="400">
         </div>
+
+
+
+        <!--lab5-->
+        <section id="movies-table-section">
+            <h2>Список фильмов к просмотру (ЛР №5)</h2>
+  
+            <div class="controls-panel">
+                <button id="add-movie-btn">Добавить фильм</button>
+                <button id="clear-movies-btn">Очистить список</button>
+                <button id="toggle-table-btn">Скрыть таблицу</button>
+                <button id="theme-toggle-btn">Переключить тему</button>
+            </div>
+
+            <div id="table-container">
+                <table class="movies-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Год</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="movies-tbody">
+                    <!-- Сюда js add строки с фильмами -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+
 
     </main>
 
